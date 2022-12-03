@@ -1,0 +1,37 @@
+/* Media Queries */
+/* Mobile First followed by tablet, followed by Desktop */
+
+
+/* Universal settings  */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Nav Bar settings */
+nav {
+    background-color: white;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav li {
+    display: inline;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+
+}
+
+nav a:active {
+
+}
+
