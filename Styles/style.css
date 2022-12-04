@@ -1,6 +1,54 @@
 /* Media Queries */
 /* Mobile First followed by tablet, followed by Desktop */
+/* Default Mobile size */
+@media (min-width: 1px){
+    * {
+        background-color: rgb(255, 201, 100);
+        /* margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box; */
+    }
+    nav .individual_link {
+        display: none;
+        float: right;
+    }
 
+    nav .logo {
+        display: none;
+    }
+
+
+}
+
+/* Large Phone to Tablet */
+@media (min-width: 768px){
+    * {
+        background-color: rgb(198, 198, 255);
+    }
+    nav .logo {
+        display: inline;
+    }
+    nav .logo_mobile {
+        display: none;
+    }
+    nav .individual_link {
+        display: inline;
+        padding: 25px 100px;
+        background-color: white;
+
+    }
+}
+
+/* Desktop */
+@media (min-width: 1201px){
+    * {
+        background-color: rgb(255, 175, 175);
+    }
+
+    nav .individual_link {
+        display: inline;
+    }
+}
 
 /* Universal settings  */
 .container {
@@ -16,6 +64,7 @@ nav {
 
 nav ul {
     list-style-type: none;
+    background-color: white;
 
 }
 
