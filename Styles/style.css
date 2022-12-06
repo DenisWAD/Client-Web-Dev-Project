@@ -1,59 +1,22 @@
-/* Media Queries */
-/* Mobile First followed by tablet, followed by Desktop */
-/* Default Mobile size */
-@media (min-width: 1px){
-    * {
-        background-color: rgb(255, 201, 100);
-        /* margin: 0 auto;
-        padding: 0;
-        box-sizing: border-box; */
-    }
-    nav .individual_link {
-        display: none;
-        float: right;
-    }
-
-    nav .logo {
-        display: none;
-    }
-
-
-}
-
-/* Large Phone to Tablet */
-@media (min-width: 768px){
-    * {
-        background-color: rgb(198, 198, 255);
-    }
-    nav .logo {
-        display: inline;
-    }
-    nav .logo_mobile {
-        display: none;
-    }
-    nav .individual_link {
-        display: inline;
-        padding: 25px 100px;
-        background-color: white;
-
-    }
-}
-
-/* Desktop */
-@media (min-width: 1201px){
-    * {
-        background-color: rgb(255, 175, 175);
-    }
-
-    nav .individual_link {
-        display: inline;
-    }
-}
-
 /* Universal settings  */
-.container {
-    width: 80%;
+/* Mobile First Design */
+* {
+    /* background-color: rgb(255, 201, 100); */
     margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 85%;
+}
+
+h2 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -84,3 +47,79 @@ nav a:active {
 
 }
 
+/* Home Page */
+#showcase .showcase_image {
+    width: 100%;
+    height: 700px;
+    background-image: url(/Pics/showcase_image_mobile.jpg);
+    background-size: 100% 100%;
+    opacity: 0.9;
+}
+#showcase .showcase_image_text {
+    color: white;
+    text-align: center;
+}
+#showcase .showcase_image_text h2{
+    padding-top: 30%;
+    padding-bottom: 3%;
+}
+#showcase .showcase_image_text p{
+    padding: 0 10%;
+}
+
+
+/* Media Queries */
+/* Mobile by default followed by tablet, followed by Desktop */
+@media (min-width: 1px){
+    nav .individual_link {
+        display: none;
+        float: right;
+    }
+    nav .logo {
+        display: none;
+    }
+    nav .hamburger_menu_icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* Large Phone to Tablet */
+@media (min-width: 768px){
+    body {
+        background-color: rgb(198, 198, 255);
+    }
+    nav .logo {
+        display: inline;
+    }
+    nav .logo_mobile {
+        display: none;
+    }
+    nav .individual_link {
+        display: inline;
+        padding: 25px 60px;
+        background-color: white;
+    }
+    nav .hamburger_menu_icon {
+        display: none;
+    }
+    #showcase .showcase_image {
+        height: 1201px;
+        background-image: url(/Pics/showcase_image_tablet.jpg);
+      
+    }   
+}
+
+/* Desktop */
+@media (min-width: 1201px){
+    body {
+        background-color: rgb(255, 175, 175);
+    }
+    .lg_wrapper {
+        width: 85%
+    }
+    #showcase .showcase_image {
+        height: 1201px;
+        background-image: url(/Pics/showcase_image_desktop.jpg);        
+    }
+}
