@@ -26,8 +26,17 @@ body {
     color: #CC6500;
 }
 
+.background {
+    background-color: #d0bda7;
+}
+
+.outer_border {
+    border-top: 3px black solid;
+}
+
 .font_preset {
     line-height: 1.7rem;
+    font-size: large;
     font-family: 'Work Sans', sans-serif;
     text-align: center;
 }
@@ -66,42 +75,111 @@ h2 {
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
 }
 
 
-/* Nav Bar settings */
+/* Nav Bar settings */ */
 nav {
     padding-top: 2%;
-    background-color: white;
 }
 nav ul {
     list-style-type: none;
-    background-color: white;
     margin-bottom: 0;
 }
-nav li {
-    display: inline;
+nav a {
+    text-decoration: none;
 }
 nav a:visited {
     color: black;
 }
 nav a:hover {
+    background-color: rgb(209, 209, 209);
 
 }
 nav a:active {
-
+    background-color: rgb(209, 209, 209);
 }
+/* Mobile navbar = Navbar */
+nav #navbar li {
+    display: inline;
+}
+
+nav #navbar_dropdown {
+    display: none;
+}
+
+ul {
+    padding-left: 2% !important;
+}
+
+nav #navbar_dropdown a {
+    padding-left: 0;
+    display: block;
+}
+nav .individual_link {
+    display: none;
+    float: right;
+}
+nav .logo {
+    display: none;
+}
+nav .hamburger_menu_icon {
+    float: right;
+    padding: 5%;
+    /* padding-top: 5%; */
+}
+
+nav .hamburger_menu_icon a {
+    background-color: white;
+}
+
+#category_boxes {
+    display: none;
+}
+
+/* Footer */
+#footer {
+    position: absolute;
+    width: 92vw;
+    background-color: white;
+    color: black;
+}
+#footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+#footer h2 {
+    text-align: center;
+    padding-left: 0;
+}
+#footer h5 {
+    padding-top: 10%;
+}
+#footer a {
+    text-decoration: none;
+}
+#footer .socials {
+   padding-top: 2%;
+}
+
+
 /* Home Page */
+/* Showcase */
 #showcase .showcase_image {
     width: 100%;
     /* height: 700px; */
     height: 80vh;
     background-image: url(/Pics/showcase_image_mobile.jpg);
     background-size: 100% 100%;
-    opacity: 0.9;
+    opacity: 0.7;
 }
 #showcase .showcase_image_text {
-    color: white;
+    
     text-align: center;
 }
 #showcase .showcase_image_text h2{
@@ -129,8 +207,6 @@ nav a:active {
 
 }
 #category_boxes{
-    /* height: 50vh; */
-    /* border: 2px black solid; */
     justify-content: space-between;
 }
 #category_boxes img {
@@ -140,35 +216,31 @@ nav a:active {
 
 /* Introduction section */
 #introduction {
-    /* background-color:  */
     text-align: center;
 }
-#introduction button {
+#introduction .btn {
     background-color: #007864;
-    padding: 25px;
+    color: white;
 }
-
+#introduction h3 {
+    padding-top: 2%;
+    padding-bottom: 2%; 
+}
+#introduction p {
+    padding: 2% 0; 
+}
 #introduction a {
     text-decoration: none;
 }
+#introduction img {
+    padding-bottom: 3%; 
+}
+
 
 /* Media Queries */
 /* Mobile by default followed by tablet, followed by Desktop */
 @media (min-width: 1px){
-    nav .individual_link {
-        display: none;
-        float: right;
-    }
-    nav .logo {
-        display: none;
-    }
-    nav .hamburger_menu_icon {
-        float: right;
-        display: block;
-    }
-    #category_boxes {
-        display: none;
-    }
+    
 }
 
 /* Large Phone to Tablet */
@@ -176,8 +248,12 @@ nav a:active {
     body {
         background-color: rgb(198, 198, 255);
     }
+    
     nav .logo {
         display: inline;
+    }
+    nav ul {
+        border-bottom: 3px rgb(198, 198, 255) solid;
     }
     nav .logo_mobile {
         display: none;
@@ -206,13 +282,24 @@ nav a:active {
         padding-top: 5%;
         padding-bottom: 5%;
         
-    }
-        
+    }   
     #category_carousel {
         display: none;
     }
     #category_boxes {
         display: block;
+    }
+    #category_boxes h3{
+        color: white;
+        padding: 4% 0;
+    }
+    #introduction .btn {
+        background-color: #007864;
+        padding: 28%;
+        color: white;;
+    }
+    #introduction a {
+        /* padding: 5rem; */
     }
 }
 
