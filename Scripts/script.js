@@ -7,7 +7,6 @@ function openHamburgerNav() {
     else {
         dropdown_navbar.style.display="none";
     }
-    // console.log("Hi there");
-
 
 }
+
