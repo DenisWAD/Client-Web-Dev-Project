@@ -4,10 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <script src="/Scripts/script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="/Client-Web-Dev-Project/Styles/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="/Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9597a2b495.js" crossorigin="anonymous"></script>
+    <title>About</title>
 </head>
 <body>
-    <h1>About Me</h1>
+    
+  <header>
+    <nav>
+      <ul id="navbar">
+        <a class="logo_mobile" href="/index.html"><img  src="/Pics/Logo (MOBILE).png" alt="Mylene Homecraft Logo"></a>
+        <a class="logo" href="/index.html"><img src="/Pics/Logo(SMALL V2).png" alt="Mylene Homecraft Logo"></a>
+        <li><a class="individual_link current_page" href="/Pages/clothing.html">Clothing</a></li>
+        <li><a class="individual_link" href="/Pages/gifts.html">Gifts</a></li>
+        <li><a class="individual_link current_page" href="/Pages/homedecor.html">Home Decor</a></li>
+        <li><a class="individual_link" href="about.html">About</a></li>
+        <!-- javascript:void(0) stays on same page-->
+        <a class="hamburger_menu_icon" href="javascript:void(0)">
+          <i onclick="openHamburgerNav()" class="fa-solid fa-bars fa-2xl"></i>
+        </a>
+      </ul>
+
+        <!-- Dropdown nav -->
+      <ul id="navbar_dropdown">
+        <li><a class="current_page" href="/Pages/clothing.html">Clothing</a></li>
+        <li><a class="" href="/Pages/gifts.html">Gifts</a></li>
+        <li><a class="" href="/Pages/homedecor.html">Home Decor</a></li>
+        <li><a class="" href="about.html">About</a></li>
+      </ul>
+
+    </nav>  
+  </header>
+      
+  <div class="background_outer">
+    <div class="container">
+      <section id="about_introduction" class="font_preset">
+        <div class="row">
+          <div class="col-sm-12 col-lg-8 blurb">
+            <h2 class="heading">About Me</h2>
+            <p>My name is Mylène and what started as a way to distract myself during the endless lockdowns became a bit more of a thoroughly   enjoyable past time. <br><br>
+            I've tried my hand at a number of different hobbies, but Crochet is the one I stuck with for it's practical side and many therapeutic benefits (plus its a lot of fun to see something ''coming to life'' as you go). <br><br>
+         
+            So far I have tried my hand at many different patterns from soft teddies which make perfect childrens companions, to plant pot covers and hanging baskets which have taken over my own house, and I aim to keep trying new patterns in the hope that I'll start publishing my own someday soon.
+            In the meantime, it's such a pleasure to be able to work with wonderful designs made by incredibly talented people.
+            <br><br>
+            I hope you will appreciate my own take on all the patterns I am trying, and I would love to hear your feedback.</p>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <img id="person_pic" class="img-fluid pic_adjust" src="/Pics/About/about_woman.jpg" alt="Picture of me crocheting at a table">
+          </div>
+        </div>
+      
+      </section>
+    </div>
+  </div>
+
+  <section id="contact_form_section" class="test_border font_preset">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Have you any questions for me? Want to know what material I use?<br><br>Feel free to contact me below:</p>
+        <form class="test_border" action="">
+            <div class="row">
+                <div class="col-4">
+                    <label for="Email">Email</label>    
+                </div>
+                <div class="col-7">
+                    <input type="email" name="Email" id="Email" placeholder="Your email">
+                </div>
+                <div class="col-4">
+                    <label for="Name">Name</label>
+                </div>
+                <div class="col-7">
+                    <input type="text" name="Name" id="Name" placeholder="Your name">
+                </div>
+                <div class="col-4">
+                    <label for="Message">Message</label>
+                </div>
+                <div class="col-7">
+                    <textarea name="Message" id="Message" cols="19" rows="5" placeholder="Message"></textarea>
+                </div>
+            </div>
+
+
+
+        </form>
+    </div>
+
+  </section>
+
+
+
+
+
+    <footer>
+      <div class="outer_border">
+        <div id="footer">
+          <div class="row">
+            <div class="col-3">
+              <h5>Pages:</h5>
+              <ul>
+                <li><a href="Pages/gifts.html">Gifts</a></li>
+                <li><a href="Pages/clothing.html">Clothing</a></li>
+                <li><a href="Pages/homedecor.html">Home Decor</a></li>
+              </ul>
+            </div>
+            <div id="address" class="col-3">
+              <h5>Address:</h5>
+              <p>46 Everlong Way,<br>Golder Bridge,<br>Co. Kerry</p>
+            </div>
+          </div>
+          <div class="row socials">
+            <div class="text-center">
+              <ul class="list-inline ">
+                <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                <li class="list-inline-item"><a href="https://instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></a></i></li>
+                <li class="list-inline-item"><a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.tiktok.com/en/"><i class="fa-brands fa-tiktok fa-2xl"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-center">Copyright &copy; 2022 Denis Murray </p>
+
+
+        </div>
+      </div>
+    </footer>
+      
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="/Scripts/script.js"></script>
 </body>
 </html>

@@ -278,8 +278,22 @@ padding-left: 21.5%;
 }
 
 
-
-
+/* About Page */
+#about_introduction h2 {
+    color: black;
+}
+#person_pic {
+    padding-top: 5%;
+}
+#about_introduction p {
+    color: white;
+}
+#about_introduction h2 {
+    color: white;
+}
+#contact_form_section h2 {
+    color: black;
+}
 
 
 
@@ -361,7 +375,10 @@ padding-left: 21.5%;
     #home_decor .pic_heights {
         height: auto;
         padding-left: 0;
-        }
+    }
+    #about_introduction .pic_adjust {
+        height: 70vh;
+    }
 }
 
 /* Desktop */
@@ -393,10 +410,20 @@ padding-left: 21.5%;
     #showcase .showcase_image_text p{
         padding: 0 10%;
     }
+    #about_introduction .pic_adjust {
+        height: auto;
+    }
 }
 
 @media (min-width: 1400px) {
     .container {
         max-width: 85vw !important;
     }
+    #about_introduction .blurb {
+        max-width: 60%;
+    }
+    #about_introduction .pic_adjust {
+        height: 50vh;
+    }
+
 }
