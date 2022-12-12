@@ -440,6 +440,9 @@ padding-left: 21.5%;
     .container {
         max-width: 70vw !important;
     }
+    #showcase .showcase_image {
+        max-width: 75vw !important;
+    }
     #showcase .showcase_image_text h2{
         font-size: 5rem;
         padding-top: 10%;
