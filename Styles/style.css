@@ -345,7 +345,7 @@ padding-left: 21.5%;
     }
     #showcase .showcase_image {
         height: 85vh;
-        background-image: url("/Pics/showcase_image_tablet.jpg");
+        background-image: url("../Pics/showcase_image_tablet.jpg");
       
     }
     #showcase .showcase_image_text h2{
@@ -412,7 +412,7 @@ padding-left: 21.5%;
     #showcase .showcase_image {
         height: 60vh;
         /* max-width: 85%; */
-        background-image: url(/Pics/showcase_image_desktop.jpg);        
+        background-image: url("../Pics/showcase_image_desktop.jpg");        
     }
     #showcase .showcase_image_text h2{
         padding-top: 20%;
