@@ -5,11 +5,6 @@
     padding: 0;
 }
 
-body {
-    /* to override default Bootstrap  */
-    /* background-color: #white !important;  */
-}
-
 .container {
     width: 85%;
 }
@@ -210,9 +205,6 @@ nav .hamburger_menu_icon a {
 #category_section .category_title {
     margin: 20%;
 }
-#category_carousel{
-
-}
 #category_boxes{
     justify-content: space-between;
 }
@@ -376,9 +368,7 @@ padding-left: 21.5%;
         padding: 28%;
         color: white;;
     }
-    #introduction a {
-        /* padding: 5rem; */
-    }
+   
     #home_decor .pic_heights {
         height: auto;
         padding-left: 0;
@@ -432,7 +422,6 @@ padding-left: 21.5%;
         color: black;
         margin: 8% 0% 4% 0%;
     }
-    
     
 }
 
