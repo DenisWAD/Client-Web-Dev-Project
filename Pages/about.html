@@ -61,30 +61,35 @@
     </div>
   </div>
 
-  <section id="contact_form_section" class="test_border font_preset">
+  <section id="contact_form_section" class="font_preset">
     <div class="container">
         <h2>Contact Me</h2>
         <p>Have you any questions for me? Want to know what material I use?<br><br>Feel free to contact me below:</p>
-        <form class="test_border" action="">
+        <form name="message_form" class="test_border" action="#" onsubmit="">
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-8 col-md-5 col-lg-5 spacing">
                     <label for="Email">Email</label>    
                 </div>
-                <div class="col-7">
-                    <input type="email" name="Email" id="Email" placeholder="Your email">
+                <div class="col-sm-8 col-md-7 spacing">
+                    <input type="email" name="Email" id="Email" placeholder="Your email" required>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4 col-md-5 col-lg-5 spacing">
                     <label for="Name">Name</label>
                 </div>
-                <div class="col-7">
-                    <input type="text" name="Name" id="Name" placeholder="Your name">
+                <div class="col-sm-8 col-md-7 spacing">
+                    <input type="text" name="Name" id="Name" placeholder="Your name" required>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4 col-md-5 col-lg-5 spacing">
                     <label for="Message">Message</label>
                 </div>
-                <div class="col-7">
-                    <textarea name="Message" id="Message" cols="19" rows="5" placeholder="Message"></textarea>
+                <div class="col-sm-8 col-md-7 spacing">
+                    <textarea name="Message" id="Message" cols="10" rows="5" placeholder="Message (max 200 characters)" required></textarea>
                 </div>
+            </div>
+            <div class="row">
+              <div>
+                <input onclick="" class="submit_btn" type="submit" value="Send message">
+              </div>
             </div>
 
 
@@ -103,7 +108,7 @@
         <div id="footer">
           <div class="row">
             <div class="col-3">
-              <h5>Pages:</h5>
+              <h5>Products:</h5>
               <ul>
                 <li><a href="Pages/gifts.html">Gifts</a></li>
                 <li><a href="Pages/clothing.html">Clothing</a></li>

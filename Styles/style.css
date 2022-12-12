@@ -66,7 +66,7 @@ body {
 }
 
 .test_border {
-    border: 3px solid black;
+    border: 1px solid black;
 }
 
 .btn a:visited {
@@ -185,17 +185,16 @@ nav .hamburger_menu_icon a {
     height: 80vh;
     background-image: url(/Pics/showcase_image_mobile.jpg);
     background-size: 100% 100%;
-    opacity: 0.75;
+    opacity: 0.85;
 }
 #showcase .showcase_image_text {
     text-align: center;
+    opacity: 1;
 }
 #showcase .showcase_image_text h2{
     padding-top: 50%;
     padding-bottom: 3%;
-}
-#showcase .showcase_image_text p{
-    padding: 0 10%;
+    opacity: 1;
 }
 
 /* Category Section */
@@ -291,20 +290,27 @@ padding-left: 21.5%;
 #about_introduction h2 {
     color: white;
 }
+
 #contact_form_section h2 {
     color: black;
+    margin: 10% 0% 6% 0%;
 }
-
-
-
-
-
-
-
-
-
-
-
+#contact_form_section input {
+    width:50%;
+}
+#contact_form_section textarea{
+    width: 85%;
+}
+#contact_form_section .spacing {
+    padding-top: 2%
+}
+#contact_form_section .submit_btn {
+    padding: 1%;
+    margin: 2% 0;
+    width: 50%;
+    background-color: #007864;
+    color: white;;
+}
 
 
 
@@ -343,8 +349,9 @@ padding-left: 21.5%;
       
     }
     #showcase .showcase_image_text h2{
-        padding-top: 25%;
+        padding-top: 35%;
         padding-bottom: 3%;
+        font-size: 4rem;
     }
     #showcase .showcase_image_text p{
         padding: 0 10%;
@@ -379,6 +386,10 @@ padding-left: 21.5%;
     #about_introduction .pic_adjust {
         height: 70vh;
     }
+    #contact_form_section h2 {
+        color: black;
+        margin: 8% 0% 4% 0%;
+    }
 }
 
 /* Desktop */
@@ -404,8 +415,9 @@ padding-left: 21.5%;
         background-image: url(/Pics/showcase_image_desktop.jpg);        
     }
     #showcase .showcase_image_text h2{
-        padding-top: 10%;
+        padding-top: 20%;
         padding-bottom: 3%;
+        font-size: 4rem;
     }
     #showcase .showcase_image_text p{
         padding: 0 10%;
@@ -413,11 +425,25 @@ padding-left: 21.5%;
     #about_introduction .pic_adjust {
         height: auto;
     }
+    #contact_form_section input, textarea {
+        width: 85%;
+    }
+    #contact_form_section h2 {
+        color: black;
+        margin: 8% 0% 4% 0%;
+    }
+    
+    
 }
 
 @media (min-width: 1400px) {
     .container {
-        max-width: 85vw !important;
+        max-width: 70vw !important;
+    }
+    #showcase .showcase_image_text h2{
+        font-size: 5rem;
+        padding-top: 10%;
+        padding-bottom: 3%;
     }
     #about_introduction .blurb {
         max-width: 60%;

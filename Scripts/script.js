@@ -10,3 +10,15 @@ function openHamburgerNav() {
 
 }
 
+function validateForm() {
+    var maxCharacters = 200;
+    var x = document.forms["myFormessage_form"]["Message"].value;
+  if (x.length > maxCharacters) {
+    alert("Message was too long. Maximum of 200 characters please");
+    return false;
+  }
+  else {
+    alert("Message received, I will be in touch");
+    return true;
+  }
+}
