@@ -61,6 +61,10 @@ body {
     padding-bottom: 10%;
 }
 
+.background_outer {
+    background-color: #007864;
+}
+
 .test_border {
     border: 3px solid black;
 }
@@ -242,19 +246,36 @@ nav .hamburger_menu_icon a {
 
 
 /* Gifts Page */
-.gifts_outer {
-    background-color: #007864;
-}
-#gifts_introduction p{
+#gifts p{
     text-align: center;
     color: white;
 }
-#gifts_introduction h3 {
-    padding-top: 2%;
+#gifts h2 {
+    text-align: center;
+}
+#gifts h3 {
+    padding-top: 6%;
     text-align: center;
     color: white;
 }
 
+/* Home Decor Page */
+#home_decor .pic_heights {
+height: 50vh;
+padding-left: 21.5%;
+}
+#home_decor h2 {
+    text-align: center;
+}
+#home_decor p{
+    text-align: center;
+    color: white;
+}
+#home_decor h3 {
+    padding-top: 6%;
+    text-align: center;
+    color: white;
+}
 
 
 
@@ -337,6 +358,10 @@ nav .hamburger_menu_icon a {
     #introduction a {
         /* padding: 5rem; */
     }
+    #home_decor .pic_heights {
+        height: auto;
+        padding-left: 0;
+        }
 }
 
 /* Desktop */

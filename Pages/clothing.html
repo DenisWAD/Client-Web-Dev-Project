@@ -4,10 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothing</title>
-    <script src="/Scripts/script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="/Client-Web-Dev-Project/Styles/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="/Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9597a2b495.js" crossorigin="anonymous"></script>
+    <title>Project</title>
 </head>
 <body>
-    <h1>Clothing</h1>
+    
+  <header>
+    <nav>
+      <ul id="navbar">
+        <a class="logo_mobile" href="/index.html"><img  src="/Pics/Logo (MOBILE).png" alt="Mylene Homecraft Logo"></a>
+        <a class="logo" href="/index.html"><img src="/Pics/Logo(SMALL V2).png" alt="Mylene Homecraft Logo"></a>
+        <li><a class="individual_link current_page" href="clothing.html">Clothing</a></li>
+        <li><a class="individual_link" href="/Pages/gifts.html">Gifts</a></li>
+        <li><a class="individual_link current_page" href="/Pages/homedecor.html">Home Decor</a></li>
+        <li><a class="individual_link" href="/Pages/about.html">About</a></li>
+        <!-- javascript:void(0) stays on same page-->
+        <a class="hamburger_menu_icon" href="javascript:void(0)">
+          <i onclick="openHamburgerNav()" class="fa-solid fa-bars fa-2xl"></i>
+        </a>
+      </ul>
+
+        <!-- Dropdown nav -->
+      <ul id="navbar_dropdown">
+        <li><a class="current_page" href="/Pages/clothing.html">Clothing</a></li>
+        <li><a class="" href="gifts.html">Gifts</a></li>
+        <li><a class="" href="/Pages/homedecor.html">Home Decor</a></li>
+        <li><a class="" href="/Pages/about.html">About</a></li>
+      </ul>
+
+    </nav>  
+  </header>
+      
+  <div class="background_outer">
+    <div class="container">
+      <div id="home_decor">
+        <h2 class="heading">Clothing</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-xl-3">
+              <img class="img-fluid" src="/Pics/Clothing/clothing_5_blanket.jpg" alt="Blanket">
+              <h3>Hooded Blanket</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque et dolore rerum, atque laboriosam minima ad distinctio animi nesciunt quidem?</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-xl-3">
+              <img class="img-fluid" src="/Pics/Clothing/clothing_2_mittens.jpg" alt="Mittens">
+              <h3>Mittens</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque et dolore rerum, atque laboriosam minima ad distinctio animi nesciunt quidem?</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-xl-3">
+              <img class="img-fluid" src="/Pics/Clothing/clothing_3_socks.jpg" alt="Socks">
+              <h3>Socks</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque et dolore rerum, atque laboriosam minima ad distinctio animi nesciunt quidem?</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-xl-3">
+              <img class="img-fluid" src="/Pics/Clothing/clothing_4_socks.webp" alt="Large Socks">
+              <h3>Over Socks</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque et dolore rerum, atque laboriosam minima ad distinctio animi nesciunt quidem?</p>
+            </div>
+
+          
+          
+
+
+        </div>
+      </div>
+    
+
+            
+    </div>
+  </div>
+
+
+
+
+
+    <footer>
+      <div class="outer_border">
+        <div id="footer">
+          <div class="row">
+            <div class="col-3">
+              <h5>Pages:</h5>
+              <ul>
+                <li><a href="Pages/gifts.html">Gifts</a></li>
+                <li><a href="Pages/clothing.html">Clothing</a></li>
+                <li><a href="Pages/homedecor.html">Home Decor</a></li>
+              </ul>
+            </div>
+            <div id="address" class="col-3">
+              <h5>Address:</h5>
+              <p>46 Everlong Way,<br>Golder Bridge,<br>Co. Kerry</p>
+            </div>
+          </div>
+          <div class="row socials">
+            <div class="text-center">
+              <ul class="list-inline ">
+                <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                <li class="list-inline-item"><a href="https://instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></a></i></li>
+                <li class="list-inline-item"><a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.tiktok.com/en/"><i class="fa-brands fa-tiktok fa-2xl"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-center">Copyright &copy; 2022 Denis Murray </p>
+
+
+        </div>
+      </div>
+    </footer>
+      
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="/Scripts/script.js"></script>
 </body>
 </html>
